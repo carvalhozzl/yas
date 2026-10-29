@@ -4,10 +4,10 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Yas</title>
-<meta name="description" content="yas — faz pouco tempo, mas já chamou atenção.">
+<meta name="description" content="yas — parede rosa, luz quente e um sorriso bobo no espelho.">
 <meta name="theme-color" content="#0c0809">
 <meta property="og:title" content="yas">
-<meta property="og:description" content="faz pouco tempo que eu te conheci e já fico esperando a próxima conversa.">
+<meta property="og:description" content="de todas as luzes que eu já vi, a sua é a que fica.">
 <meta property="og:image" content="https://carvalhozzl.github.io/yas/img/yas-1.jpg">
 <meta property="og:url" content="https://carvalhozzl.github.io/yas/">
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%230c0809'/%3E%3Ctext x='32' y='44' font-family='Georgia,serif' font-style='italic' font-size='36' fill='%23ff8fb1' text-anchor='middle'%3Ey%3C/text%3E%3C/svg%3E">
@@ -225,10 +225,10 @@
   <div class="hero-bg" id="heroBg"></div>
   <canvas id="bokeh"></canvas>
   <div class="hero-inner">
-    <div class="eyebrow">pouco tempo · boa surpresa</div>
+    <div class="eyebrow">luz quente · parede rosa</div>
     <h1 class="word" id="word" aria-label="yas">yas</h1>
     <div class="thread"></div>
-    <p class="tag serif"><em>faz pouco tempo que eu te conheci e já fico esperando a próxima conversa.</em></p>
+    <p class="tag serif"><em>de todas as luzes que eu já vi, a sua é a que fica.</em></p>
   </div>
   <div class="scroll">role<i></i></div>
 </header>
@@ -239,12 +239,12 @@
 
 <section class="sorriso" id="sorriso">
   <div class="label rv">capítulo 01 — sorriso</div>
-  <h2 class="rv">esse sorriso<br>é <em>golpe baixo</em>.</h2>
+  <h2 class="rv">nenhuma estrela brilha<br>como o seu <em>sorriso</em>.</h2>
   <div class="split">
     <div class="frame mask curtain rv"><img src="img/yas-1.jpg" alt="Yas rindo com o dedo no sorriso, fundo rosa" style="object-position:28% 40%" data-speed="-.06"><span class="num">01 · tarde</span></div>
     <div class="copy rv">
-      <p>A gente se conhece faz pouco tempo, e eu já reparei: quando você ri, fica difícil prestar atenção em qualquer outra coisa.</p>
-      <p>Não sei ainda onde isso vai dar. Só sei que eu tô gostando bastante do caminho.</p>
+      <p>Nem todo flash vem do celular — o mais bonito vem de você, e nenhum espelho consegue segurar.</p>
+      <p>Parede rosa ou luz de festa, dia ou noite — em qualquer foto, o meu lugar favorito continua sendo o seu sorriso.</p>
       <svg class="wave" viewBox="0 0 600 60" preserveAspectRatio="none"><path class="wv" d=""/></svg>
     </div>
   </div>
@@ -252,11 +252,11 @@
 
 <section class="noite" id="noite">
   <div class="label rv">capítulo 02 — noite</div>
-  <h2 class="rv">quero conhecer<br>cada <em>detalhe</em>.</h2>
+  <h2 class="rv">até a noite fica <em>calma</em><br>quando você chega.</h2>
   <div class="split">
     <div class="copy rv">
-      <p>Seu jeito, suas manias, suas músicas, suas histórias. Duas semanas é pouco pra tudo isso, e eu não tenho pressa nenhuma.</p>
-      <p>E, sendo sincero, em qualquer luz você continua sendo a coisa mais bonita do lugar.</p>
+      <p>O dia pode ter sido corrido, a semana pode ter pesado — mas é só você mexer no cabelo que tudo muda de cor.</p>
+      <p>Tem gente que sai à noite pra ver as luzes. Eu iria só pra ver você no meio delas.</p>
       <svg class="wave" viewBox="0 0 600 60" preserveAspectRatio="none"><path class="wv" d=""/></svg>
     </div>
     <div class="frame mask curtain rv"><img src="img/yas-2.jpg" alt="Yas sob luz quente, mexendo no cabelo" style="object-position:50% 30%" data-speed=".06"><span class="num">02 · noite</span></div>
@@ -269,19 +269,19 @@
       <div class="label rv">capítulo 03 — rolo de câmera</div>
       <h2 class="rv">galeria</h2>
     </div>
-    <p class="rv">Seis fotos e uma certeza: você é fotogênica demais. Toque para ver inteira.</p>
+    <p class="rv">Seis frames, mil humores. Toque para ver inteira.</p>
   </div>
   <div class="reel" id="reel"></div>
   <div class="hint">← arraste →</div>
 </section>
 
 <section class="frase">
-  <p id="frase">a gente mal começou, e eu já quero muito ver o próximo capítulo.</p>
+  <p id="frase">nem toda luz vem do sol — algumas vêm de uma parede rosa e de um sorriso bobo no espelho.</p>
 </section>
 
 <footer>
   <div class="big">yas</div>
-  <div class="row"><span>pra você, yas</span><span>isso é só o começo ✦ 2026</span></div>
+  <div class="row"><span>@yas</span><span>feito com luz quente ✦ 2026</span></div>
 </footer>
 
 <div class="lb" id="lb" role="dialog" aria-modal="true" aria-label="Foto ampliada">
@@ -306,7 +306,7 @@ addEventListener('load',()=>setTimeout(()=>{
 },reduce?0:1500));
 
 // marquee
-const items = ['yas','sorriso bonito','boa conversa','primeiros dias','quero te conhecer','próximo encontro','boa surpresa'];
+const items = ['yas','golden hour','parede rosa','luz quente','flash no espelho','sorriso bobo','luz de festa'];
 const chunk = items.map(t=>`<span>${t}</span><b>✦</b>`).join('');
 document.getElementById('track').innerHTML = chunk+chunk+chunk+chunk;
 
@@ -380,7 +380,7 @@ addEventListener('scroll',onScroll,{passive:true});
 
 // frase que acende palavra por palavra
 const fr=document.getElementById('frase');
-const red=['próximo','capítulo'];
+const red=['rosa','sorriso'];
 fr.innerHTML=fr.textContent.split(' ').map(w=>`<span class="w${red.some(r=>w.startsWith(r))?' r':''}">${w}</span>`).join(' ');
 const ws=[...fr.querySelectorAll('.w')];
 function litWords(){
@@ -393,12 +393,12 @@ onScroll();
 
 // galeria
 const fotos=[
-  {src:'img/yas-1.jpg',t:'o sorriso que chamou atenção',c:'tarde',pos:'28% 40%'},
+  {src:'img/yas-1.jpg',t:'sorriso bobo',c:'tarde',pos:'28% 40%'},
   {src:'img/yas-2.jpg',t:'luz quente',c:'noite',pos:'50% 30%'},
-  {src:'img/yas-3.jpg',t:'pose de quem sabe',c:'noite',pos:'60% 40%'},
-  {src:'img/yas-4.jpg',t:'esse olhar',c:'tarde',pos:'50% 40%'},
-  {src:'img/yas-5.jpg',t:'até pensativa fica bonita',c:'noite',pos:'72% 40%'},
-  {src:'img/yas-6.jpg',t:'estilo próprio',c:'tarde',pos:'50% 30%'},
+  {src:'img/yas-3.jpg',t:'brilho dourado',c:'noite',pos:'60% 40%'},
+  {src:'img/yas-4.jpg',t:'parede rosa',c:'tarde',pos:'50% 40%'},
+  {src:'img/yas-5.jpg',t:'luz prata',c:'noite',pos:'72% 40%'},
+  {src:'img/yas-6.jpg',t:'flash no espelho',c:'tarde',pos:'50% 30%'},
 ];
 const reel=document.getElementById('reel');
 reel.innerHTML=fotos.map((f,i)=>`<button class="card rv" data-i="${i}"><figure><img src="${f.src}" alt="${f.t}" style="object-position:${f.pos}" loading="lazy"><figcaption><small>${String(i+1).padStart(2,'0')} · ${f.c}</small>${f.t}</figcaption></figure></button>`).join('');
