@@ -8,7 +8,7 @@
 <meta name="theme-color" content="#0c0809">
 <meta property="og:title" content="yas">
 <meta property="og:description" content="de todos os lugares que eu já fui, o meu favorito é onde você está.">
-<meta property="og:image" content="https://carvalhozzl.github.io/yas/img/yas-3.jpg">
+<meta property="og:image" content="https://carvalhozzl.github.io/yas/img/yas-1.jpg">
 <meta property="og:url" content="https://carvalhozzl.github.io/yas/">
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%230c0809'/%3E%3Ctext x='32' y='44' font-family='Georgia,serif' font-style='italic' font-size='36' fill='%23ff8fb1' text-anchor='middle'%3Ey%3C/text%3E%3C/svg%3E">
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -83,11 +83,14 @@
   /* hero */
   .hero{position:relative;height:100svh;min-height:560px;overflow:hidden;display:grid;place-items:center}
   .hero-bg{
-    position:absolute;inset:0;background:url(img/yas-3.jpg) 56% 70%/cover;
-    filter:saturate(1.05) brightness(.72);transform:scale(1.08);
+    position:absolute;inset:-10%;
+    background:
+      radial-gradient(40% 35% at 30% 35%,rgba(232,69,122,.28),transparent 70%),
+      radial-gradient(45% 40% at 72% 65%,rgba(201,211,220,.12),transparent 70%),
+      radial-gradient(60% 50% at 50% 50%,#2a0f1a,var(--bg) 75%);
     animation:breathe 14s ease-in-out infinite alternate;
   }
-  @keyframes breathe{to{transform:scale(1)}}
+  @keyframes breathe{to{transform:scale(1.08) rotate(4deg)}}
   .hero::after{content:"";position:absolute;inset:0;background:
     radial-gradient(ellipse at center,transparent 30%,rgba(12,8,9,.7) 85%),
     linear-gradient(to bottom,transparent 55%,var(--bg))}
