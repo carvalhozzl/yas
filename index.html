@@ -7,7 +7,7 @@
 <meta name="description" content="yas — parede rosa, luz quente e um sorriso bobo no espelho.">
 <meta name="theme-color" content="#0c0809">
 <meta property="og:title" content="yas">
-<meta property="og:description" content="de todas as luzes que eu já vi, a sua é a que fica.">
+<meta property="og:description" content="tem gente que aparece na foto. você é a foto.">
 <meta property="og:image" content="https://carvalhozzl.github.io/yas/img/yas-1.jpg">
 <meta property="og:url" content="https://carvalhozzl.github.io/yas/">
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%230c0809'/%3E%3Ctext x='32' y='44' font-family='Georgia,serif' font-style='italic' font-size='36' fill='%23ff8fb1' text-anchor='middle'%3Ey%3C/text%3E%3C/svg%3E">
@@ -228,7 +228,7 @@
     <div class="eyebrow">luz quente · parede rosa</div>
     <h1 class="word" id="word" aria-label="yas">yas</h1>
     <div class="thread"></div>
-    <p class="tag serif"><em>de todas as luzes que eu já vi, a sua é a que fica.</em></p>
+    <p class="tag serif"><em>tem gente que aparece na foto. você é a foto.</em></p>
   </div>
   <div class="scroll">role<i></i></div>
 </header>
@@ -239,12 +239,12 @@
 
 <section class="sorriso" id="sorriso">
   <div class="label rv">capítulo 01 — sorriso</div>
-  <h2 class="rv">nenhuma estrela brilha<br>como o seu <em>sorriso</em>.</h2>
+  <h2 class="rv">nenhum filtro chega<br>perto do seu <em>sorriso</em>.</h2>
   <div class="split">
     <div class="frame mask curtain rv"><img src="img/yas-1.jpg" alt="Yas rindo com o dedo no sorriso, fundo rosa" style="object-position:28% 40%" data-speed="-.06"><span class="num">01 · tarde</span></div>
     <div class="copy rv">
-      <p>Nem todo flash vem do celular — o mais bonito vem de você, e nenhum espelho consegue segurar.</p>
-      <p>Branco ou preto, dia ou noite — em qualquer foto, o meu lugar favorito continua sendo o seu sorriso.</p>
+      <p>Parede rosa, cabelo bagunçado e uma risada no meio — e mesmo assim parece capa de revista.</p>
+      <p>Tem beleza que precisa de produção. A sua aparece até sem querer.</p>
       <svg class="wave" viewBox="0 0 600 60" preserveAspectRatio="none"><path class="wv" d=""/></svg>
     </div>
   </div>
@@ -252,11 +252,11 @@
 
 <section class="noite" id="noite">
   <div class="label rv">capítulo 02 — noite</div>
-  <h2 class="rv">até o mar fica <em>calmo</em><br>quando você chega.</h2>
+  <h2 class="rv">até a luz fica <em>bonita</em><br>quando bate em você.</h2>
   <div class="split">
     <div class="copy rv">
-      <p>O céu pode estar cinza, a onda pode quebrar forte — mas é só você prender uma flor no cabelo que o dia inteiro muda de cor.</p>
-      <p>Tem gente que vai à praia pra ver o mar. Eu iria só pra ver você olhando pra ele.</p>
+      <p>Pouca luz, quarto escuro, câmera do celular — e o resultado ainda parece ensaio fotográfico.</p>
+      <p>Tem gente que passa horas procurando o melhor ângulo. Você parece não ter um ruim.</p>
       <svg class="wave" viewBox="0 0 600 60" preserveAspectRatio="none"><path class="wv" d=""/></svg>
     </div>
     <div class="frame mask curtain rv"><img src="img/yas-2.jpg" alt="Yas sob luz quente, mexendo no cabelo" style="object-position:50% 30%" data-speed=".06"><span class="num">02 · noite</span></div>
@@ -269,14 +269,14 @@
       <div class="label rv">capítulo 03 — rolo de câmera</div>
       <h2 class="rv">galeria</h2>
     </div>
-    <p class="rv">Seis frames, mil humores. Toque para ver inteira.</p>
+    <p class="rv">Seis frames, nenhum ângulo ruim. Toque para ver inteira.</p>
   </div>
   <div class="reel" id="reel"></div>
   <div class="hint">← arraste →</div>
 </section>
 
 <section class="frase">
-  <p id="frase">nem toda luz vem do sol — algumas vêm de um fio vermelho no cabelo e de um sorriso bobo no espelho.</p>
+  <p id="frase">nem toda luz vem do sol — algumas vêm de uma parede rosa e de um sorriso que deixa qualquer foto mais bonita.</p>
 </section>
 
 <footer>
@@ -306,7 +306,7 @@ addEventListener('load',()=>setTimeout(()=>{
 },reduce?0:1500));
 
 // marquee
-const items = ['yas','golden hour','parede rosa','luz quente','flash no espelho','sorriso bobo','luz de festa'];
+const items = ['yas','golden hour','parede rosa','luz quente','flash no espelho','sem ângulo ruim','capa de revista'];
 const chunk = items.map(t=>`<span>${t}</span><b>✦</b>`).join('');
 document.getElementById('track').innerHTML = chunk+chunk+chunk+chunk;
 
@@ -380,7 +380,7 @@ addEventListener('scroll',onScroll,{passive:true});
 
 // frase que acende palavra por palavra
 const fr=document.getElementById('frase');
-const red=['vermelho','sorriso'];
+const red=['rosa','sorriso'];
 fr.innerHTML=fr.textContent.split(' ').map(w=>`<span class="w${red.some(r=>w.startsWith(r))?' r':''}">${w}</span>`).join(' ');
 const ws=[...fr.querySelectorAll('.w')];
 function litWords(){
