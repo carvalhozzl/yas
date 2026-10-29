@@ -241,7 +241,7 @@
   <div class="label rv">capítulo 01 — sorriso</div>
   <h2 class="rv">o seu sorriso<br>é a minha <em>casa</em>.</h2>
   <div class="split">
-    <div class="frame mask curtain rv"><img src="img/yas-1.jpg" alt="Yas sorrindo e acenando em frente à parede rosa" style="object-position:62% 30%" data-speed="-.06"><span class="num">01 · tarde</span></div>
+    <div class="frame mask curtain rv"><img src="img/yas-1.jpg" alt="Yas rindo com o dedo no sorriso, fundo rosa" style="object-position:28% 40%" data-speed="-.06"><span class="num">01 · tarde</span></div>
     <div class="copy rv">
       <p>Eu não sei explicar o que acontece comigo quando você sorri. Só sei que o mundo fica mais calmo e o meu coração, mais seu.</p>
       <p>Você chegou sem fazer barulho e, quando eu percebi, já era a melhor parte de todos os meus dias.</p>
@@ -259,7 +259,7 @@
       <p>Em qualquer lugar, em qualquer luz, você continua sendo a coisa mais bonita que os meus olhos já viram.</p>
       <svg class="wave" viewBox="0 0 600 60" preserveAspectRatio="none"><path class="wv" d=""/></svg>
     </div>
-    <div class="frame mask curtain rv"><img src="img/yas-2.jpg" alt="Yas pensativa com a mão no rosto sob luz prateada" style="object-position:60% 30%" data-speed=".06"><span class="num">02 · noite</span></div>
+    <div class="frame mask curtain rv"><img src="img/yas-2.jpg" alt="Yas sob luz quente, mexendo no cabelo" style="object-position:50% 30%" data-speed=".06"><span class="num">02 · noite</span></div>
   </div>
 </section>
 
@@ -269,7 +269,7 @@
       <div class="label rv">capítulo 03 — rolo de câmera</div>
       <h2 class="rv">galeria</h2>
     </div>
-    <p class="rv">Cada foto sua é um pedaço do meu lugar favorito. Toque para ver inteira.</p>
+    <p class="rv">Seis fotos, e eu ainda acho pouco. Toque para ver inteira.</p>
   </div>
   <div class="reel" id="reel"></div>
   <div class="hint">← arraste →</div>
@@ -393,8 +393,12 @@ onScroll();
 
 // galeria
 const fotos=[
-  {src:'img/yas-1.jpg',t:'o sorriso que me ganhou',c:'tarde',pos:'62% 30%'},
-  {src:'img/yas-2.jpg',t:'o olhar que me prende',c:'noite',pos:'60% 30%'},
+  {src:'img/yas-1.jpg',t:'o sorriso que me ganhou',c:'tarde',pos:'28% 40%'},
+  {src:'img/yas-2.jpg',t:'luz quente, coração quente',c:'noite',pos:'50% 30%'},
+  {src:'img/yas-3.jpg',t:'a pose que me desmonta',c:'noite',pos:'60% 40%'},
+  {src:'img/yas-4.jpg',t:'o olhar que me prende',c:'tarde',pos:'50% 40%'},
+  {src:'img/yas-5.jpg',t:'até pensativa é perfeita',c:'noite',pos:'72% 40%'},
+  {src:'img/yas-6.jpg',t:'minha garota',c:'tarde',pos:'50% 30%'},
 ];
 const reel=document.getElementById('reel');
 reel.innerHTML=fotos.map((f,i)=>`<button class="card rv" data-i="${i}"><figure><img src="${f.src}" alt="${f.t}" style="object-position:${f.pos}" loading="lazy"><figcaption><small>${String(i+1).padStart(2,'0')} · ${f.c}</small>${f.t}</figcaption></figure></button>`).join('');
