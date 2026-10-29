@@ -244,7 +244,7 @@
     <div class="frame mask curtain rv"><img src="img/yas-1.jpg" alt="Yas rindo com o dedo no sorriso, fundo rosa" style="object-position:28% 40%" data-speed="-.06"><span class="num">01 · tarde</span></div>
     <div class="copy rv">
       <p>Nem todo flash vem do celular — o mais bonito vem de você, e nenhum espelho consegue segurar.</p>
-      <p>Parede rosa ou luz de festa, dia ou noite — em qualquer foto, o meu lugar favorito continua sendo o seu sorriso.</p>
+      <p>Branco ou preto, dia ou noite — em qualquer foto, o meu lugar favorito continua sendo o seu sorriso.</p>
       <svg class="wave" viewBox="0 0 600 60" preserveAspectRatio="none"><path class="wv" d=""/></svg>
     </div>
   </div>
@@ -252,11 +252,11 @@
 
 <section class="noite" id="noite">
   <div class="label rv">capítulo 02 — noite</div>
-  <h2 class="rv">até a noite fica <em>calma</em><br>quando você chega.</h2>
+  <h2 class="rv">até o mar fica <em>calmo</em><br>quando você chega.</h2>
   <div class="split">
     <div class="copy rv">
-      <p>O dia pode ter sido corrido, a semana pode ter pesado — mas é só você mexer no cabelo que tudo muda de cor.</p>
-      <p>Tem gente que sai à noite pra ver as luzes. Eu iria só pra ver você no meio delas.</p>
+      <p>O céu pode estar cinza, a onda pode quebrar forte — mas é só você prender uma flor no cabelo que o dia inteiro muda de cor.</p>
+      <p>Tem gente que vai à praia pra ver o mar. Eu iria só pra ver você olhando pra ele.</p>
       <svg class="wave" viewBox="0 0 600 60" preserveAspectRatio="none"><path class="wv" d=""/></svg>
     </div>
     <div class="frame mask curtain rv"><img src="img/yas-2.jpg" alt="Yas sob luz quente, mexendo no cabelo" style="object-position:50% 30%" data-speed=".06"><span class="num">02 · noite</span></div>
@@ -276,7 +276,7 @@
 </section>
 
 <section class="frase">
-  <p id="frase">nem toda luz vem do sol — algumas vêm de uma parede rosa e de um sorriso bobo no espelho.</p>
+  <p id="frase">nem toda luz vem do sol — algumas vêm de um fio vermelho no cabelo e de um sorriso bobo no espelho.</p>
 </section>
 
 <footer>
@@ -380,7 +380,7 @@ addEventListener('scroll',onScroll,{passive:true});
 
 // frase que acende palavra por palavra
 const fr=document.getElementById('frase');
-const red=['rosa','sorriso'];
+const red=['vermelho','sorriso'];
 fr.innerHTML=fr.textContent.split(' ').map(w=>`<span class="w${red.some(r=>w.startsWith(r))?' r':''}">${w}</span>`).join(' ');
 const ws=[...fr.querySelectorAll('.w')];
 function litWords(){
