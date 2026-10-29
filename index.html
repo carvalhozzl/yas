@@ -1,0 +1,113 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#1a0710">
+<title>Para Yas</title>
+<meta name="description" content="Um cantinho feito só para você, Yas.">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>💗</text></svg>">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400;1,500&family=Great+Vibes&family=Jost:wght@300;400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<canvas id="hearts" aria-hidden="true"></canvas>
+
+<!-- Tela de abertura -->
+<div id="intro" class="intro">
+  <div class="intro-inner">
+    <p class="eyebrow">uma surpresa para</p>
+    <h1 class="script intro-name">Yas</h1>
+    <button id="open" class="seal" aria-label="Abrir a surpresa">
+      <span class="seal-heart">♥</span>
+    </button>
+    <p class="hint">toque no coração</p>
+  </div>
+</div>
+
+<main id="site" class="site" aria-hidden="true">
+
+  <!-- Abertura -->
+  <section class="hero">
+    <p class="eyebrow reveal">para a garota mais linda do mundo</p>
+    <h2 class="script hero-name reveal">Yas</h2>
+    <p class="typed" aria-live="polite"><span id="typed"></span><span class="caret">|</span></p>
+    <div class="scroll-cue reveal">
+      <span>deslize</span>
+      <i></i>
+    </div>
+  </section>
+
+  <!-- Foto 1 -->
+  <section class="moment">
+    <figure class="polaroid tilt-left reveal">
+      <img src="img/yas-1.jpg" alt="Yas sorrindo e acenando" loading="lazy">
+      <figcaption class="script">esse sorriso…</figcaption>
+    </figure>
+    <blockquote class="quote reveal">
+      “Esse sorriso é o meu lugar favorito no mundo inteiro.”
+    </blockquote>
+  </section>
+
+  <!-- Frases -->
+  <section class="phrases">
+    <p class="eyebrow reveal">coisas que eu sinto</p>
+    <div class="phrase reveal"><span class="num">01</span><p>Você chegou e, sem pedir licença, virou a melhor parte de todos os meus dias.</p></div>
+    <div class="phrase reveal"><span class="num">02</span><p>Se eu pudesse escolher de novo, escolheria você em todas as vidas.</p></div>
+    <div class="phrase reveal"><span class="num">03</span><p>Meu coração tem endereço fixo: onde você estiver.</p></div>
+    <div class="phrase reveal"><span class="num">04</span><p>Com você, até o silêncio fica bonito.</p></div>
+  </section>
+
+  <!-- Foto 2 -->
+  <section class="moment">
+    <figure class="polaroid tilt-right reveal">
+      <img src="img/yas-2.jpg" alt="Yas pensativa com a mão no rosto" loading="lazy">
+      <figcaption class="script">até pensativa é perfeita</figcaption>
+    </figure>
+    <blockquote class="quote reveal">
+      “Eu poderia passar a vida inteira só te olhando — e ainda acharia pouco.”
+    </blockquote>
+  </section>
+
+  <!-- Motivos -->
+  <section class="reasons">
+    <p class="eyebrow reveal">toque nos cartões</p>
+    <h3 class="title reveal">Motivos pelos quais <em>eu te amo</em></h3>
+    <div class="cards">
+      <button class="card reveal"><span class="front">♥</span><span class="back">Seu jeito de rir de tudo</span></button>
+      <button class="card reveal"><span class="front">♥</span><span class="back">O brilho no seu olhar</span></button>
+      <button class="card reveal"><span class="front">♥</span><span class="back">Sua paz que me acalma</span></button>
+      <button class="card reveal"><span class="front">♥</span><span class="back">Você ser exatamente você</span></button>
+      <button class="card reveal"><span class="front">♥</span><span class="back">Como você deixa tudo mais leve</span></button>
+      <button class="card reveal"><span class="front">♥</span><span class="back">E mil outros que não cabem aqui</span></button>
+    </div>
+  </section>
+
+  <!-- Carta -->
+  <section class="letter-wrap">
+    <article class="letter reveal">
+      <p class="script letter-hello">Minha Yas,</p>
+      <p>Eu fiz este cantinho só pra te lembrar de uma coisa simples: você é amada. Muito, de verdade, todos os dias.</p>
+      <p>Obrigado por cada sorriso, cada conversa, cada momento que você divide comigo. Você transforma dias comuns em lembranças que eu quero guardar pra sempre.</p>
+      <p>Que a gente continue escrevendo essa história juntos, devagarinho, com carinho e com muito amor.</p>
+      <p class="script letter-sign">Com todo o meu amor ♥</p>
+    </article>
+  </section>
+
+  <!-- Final -->
+  <section class="finale">
+    <div class="big-heart reveal" aria-hidden="true">♥</div>
+    <h3 class="script finale-text reveal">Eu te amo, Yas</h3>
+    <p class="finale-sub reveal">hoje, amanhã e em todos os dias que vierem.</p>
+    <button id="burst" class="btn reveal">Toque aqui ♥</button>
+  </section>
+
+  <footer class="foot">feito com amor, só para você</footer>
+</main>
+
+<script src="script.js"></script>
+</body>
+</html>
